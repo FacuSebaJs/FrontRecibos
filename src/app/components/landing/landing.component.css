@@ -1,0 +1,122 @@
+/* RESET GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.pantalla {
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 0 16px;
+}
+
+/* LOGO */
+.logo-central {
+  width: 540px;
+  margin-bottom: 40px;
+  animation: fadeSlideIn 1s ease-out;
+}
+
+/* SLOGAN */
+.slogan-central {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  animation: fadeSlideIn 1.2s ease-out;
+}
+
+/* BOTÓN */
+.ingresar-central {
+  padding: 12px 32px;
+  background-color: #bdbdbd;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  animation: fadeSlideIn 1.4s ease-out;
+}
+
+.ingresar-central:hover {
+  background-color: #9e9e9e;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LOGOS DE LOGIN */
+.login-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  animation: fadeSlideIn 1.6s ease-out;
+}
+
+.login-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.login-icon:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .pantalla {
+    padding: 40px 20px 20px;
+    justify-content: flex-start;
+  }
+
+  .logo-central {
+    width: 180px;
+    margin-bottom: 30px;
+  }
+
+  .slogan-central {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .ingresar-central {
+    width: 100%;
+    max-width: 280px;
+  }
+}

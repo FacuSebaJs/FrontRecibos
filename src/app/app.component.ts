@@ -3,10 +3,8 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [RouterOutlet],  // 👈 Esto activa el sistema de rutas
+  template: `<router-outlet />`  // 👈 Esto reemplaza al LandingComponent fijo
 })
-export class AppComponent {
-  title = 'Front_Recibos';
-}
+export class AppComponent {}
