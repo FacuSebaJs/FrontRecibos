@@ -1,0 +1,32 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="logo">🧾 Recibos</div>
+    <nav>
+  <a routerLink="/dashboard">
+    <span class="material-icons">home</span> Inicio
+  </a>
+  <a routerLink="/recibos">
+    <span class="material-icons">description</span> Mis Recibos
+  </a>
+  <a routerLink="/descargar">
+    <span class="material-icons">history</span> Historial
+  </a>
+  <a routerLink="/configuracion">
+    <span class="material-icons">card_giftcard</span> Liquidaciones especiales
+  </a>
+</nav>
+
+
+  </aside>
+
+  <main class="main-panel">
+    <header class="topbar">
+      <span>Bienvenido, Usuario</span>
+      <button (click)="logout()">Salir</button>
+    </header>
+
+    <section class="contenido">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>

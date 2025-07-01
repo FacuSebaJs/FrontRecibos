@@ -1,0 +1,11 @@
+<div class="especiales-container">
+  <h2>Liquidaciones Especiales</h2>
+
+  <ul class="lista-especiales">
+    <li *ngFor="let item of especiales">
+      <span>{{ item.titulo }} - {{ item.fecha }}</span>
+      <button (click)="descargar(item)">Descargar</button>
+    </li>
+  </ul>
+</div>
+

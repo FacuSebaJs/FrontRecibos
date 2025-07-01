@@ -1,0 +1,27 @@
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #e2e7e6;
+  text-shadow:
+    0 0 5px #00b894,
+    0 0 10px #00b894,
+    0 0 20px #00b894,
+    0 0 40px rgba(0, 184, 148, 0.3);
+  animation: neonRecibo 1.5s infinite alternate;
+}
+
+@keyframes neonRecibo {
+  from {
+    text-shadow:
+      0 0 5px #000000,
+      0 0 10px #00b894,
+      0 0 20px #00b894,
+      0 0 40px rgba(0, 184, 148, 0.3);
+  }
+  to {
+    text-shadow:
+      0 0 10px #041d18,
+      0 0 20px #00b894,
+      0 0 40px #00b894,
+      0 0 60px rgba(0, 184, 148, 0.5);
+  }
+}

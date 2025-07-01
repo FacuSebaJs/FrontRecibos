@@ -7,4 +7,8 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],  // 👈 Esto activa el sistema de rutas
   template: `<router-outlet />`  // 👈 Esto reemplaza al LandingComponent fijo
 })
-export class AppComponent {}
+export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+}

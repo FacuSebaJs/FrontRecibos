@@ -28,11 +28,11 @@
 
 .campo {
   width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+  padding: 10px;
+  margin-bottom: 15px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .descargar-btn {
@@ -56,4 +56,45 @@
     align-items: center;
     padding: 20px;
   }
+}
+.bienvenida {
+  color:black;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+  margin-right: 35px;
+}
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+.bienvenida-home {
+  background-image: url('/SegundaPantalla.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 👈 sube el texto */
+  align-items: flex-start;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* 👈 mejora contraste */
+}
+
+
+.bienvenida-home h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bienvenida-home p {
+  font-size: 1.2rem;
+}
+.bienvenida-caja {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 8px;
 }

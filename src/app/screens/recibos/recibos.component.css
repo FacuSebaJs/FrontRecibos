@@ -1,0 +1,50 @@
+.contenedor-recibos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.formulario-recibo {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+}
+
+.formulario-recibo .logo-recibo {
+  width: 160px;
+  margin-bottom: 1rem;
+}
+
+.selector-mes, .campo-anio {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.boton-descarga {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2f3542;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.boton-descarga:hover {
+  background-color: #57606f;
+}
+
+.bienvenida {
+  margin-top: 1rem;
+  font-weight: bold;
+}
